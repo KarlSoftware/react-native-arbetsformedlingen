@@ -1,6 +1,6 @@
 # react-native-arbetsformedlingen
 
-Tinder-like app that takes a keyword and searched the current location for jobs using Arbetsförmedlingen's open API. The results will be previewed in a card-like fashion allowing the user to swipe left to discard the card, or swipe right to save it. All saved jobs can then be accessed from the Favorites View.
+Tinder-like app that takes a keyword and searches the current location for jobs using Arbetsförmedlingen's open API. The results will be previewed in a card-like fashion allowing the user to swipe left to discard the card, or swipe right to save it. All saved jobs can then be accessed from the Favorites View.
 
 ![WelcomeScreen1](https://user-images.githubusercontent.com/24361798/29005068-b526024a-7ad3-11e7-9854-49070f052ee0.png)
 ![WelcomeScreen2](https://user-images.githubusercontent.com/24361798/29005069-ba50f3ec-7ad3-11e7-94cc-0051b5f5593a.png)
