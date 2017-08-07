@@ -16,7 +16,11 @@ const App = () => {
     main: {
       screen: TabNavigator({
         map: { screen: MapScreen },
-        deck: { screen: DeckScreen },
+        deck: {
+          screen: StackNavigator({
+            deck: { screen: DeckScreen },
+          }),
+        },
         review: {
           screen: StackNavigator({
             review: { screen: ReviewScreen },

@@ -17,6 +17,7 @@ class DeckScreen extends Component {
   }
 
   static navigationOptions = () => ({
+    headerTitle: 'Sökresultat',
     tabBarLabel: 'Sökresultat',
     tabBarIcon: ({ tintColor }) => (
       <Icon name="description" size={30} color={tintColor} />
@@ -42,7 +43,7 @@ class DeckScreen extends Component {
     }
 
     return (
-      <Card containerStyle={{ borderRadius: 10, height: 450 }}>
+      <Card containerStyle={{ borderRadius: 10, height: 425 }}>
         <View style={{ height: 200 }}>
           <MapView
             scrollEnabled={false}
@@ -57,7 +58,7 @@ class DeckScreen extends Component {
         <View>
           <Text style={{ fontWeight: 'bold', marginBottom: 5 }}>{job.annons.annonsrubrik}</Text>
           <View>
-            <Text style={{ marginBottom: 15 }}>
+            <Text style={{ marginBottom: 5 }}>
               {truncateString(job.annons.annonstext.replace(/\n/g, ''), 220)}
             </Text>
             <Text style={{ fontStyle: 'italic' }}>Sista ansökningsdatum: {formatDate(job.ansokan.sista_ansokningsdag)}</Text>
@@ -82,7 +83,7 @@ class DeckScreen extends Component {
 
   render() {
     return (
-      <View style={{ backgroundColor: '#13769d', flex: 1, paddingTop: 10 }}>
+      <View style={{ backgroundColor: '#13769d', flex: 1 }}>
         <Swipe
           data={this.props.jobs}
           renderCard={this.renderCard}
