@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, TextInput, ActivityIndicator, Platform } from 'react-native';
+import { View, TextInput, Platform } from 'react-native';
 import { MapView, Location, Permissions } from 'expo';
 import { connect } from 'react-redux';
 import { Button, Icon } from 'react-native-elements';
